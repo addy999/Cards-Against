@@ -1,8 +1,70 @@
-<html>
-    <head>
-        <title>{{ title }} - Microblog</title>
-    </head>
-    <body>
-        <h1>Hello, {{ user.username }}!</h1>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>CA - UofT</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='vendor/bootstrap/css/bootstrap.min.css') }}">
+
+  <!-- Custom Fonts -->
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='vendor/fontawesome-free/css/all.min.css') }}">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='vendor/simple-line-icons/css/simple-line-icons.css') }}">
+
+  <!-- Custom CSS -->
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/mainpage.css') }}">
+
+  <!-- Bootstrap core JavaScript -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+</head>
+
+<body id="page-top">
+
+  <!-- Header -->
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto" id="title">
+      <h1 class="mb-1">Cards against UofT</h1>
+      <h3 class="mb-5">
+        <em>A multiplayer game of crowd sourced Cards Against cards</em>
+      </h3>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="creategame">Create new game</a>
+    </div>
+    <div class="overlay"></div>
+  </header>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white" href="https://docs.google.com/spreadsheets/d/1sDRVGlAFT78bRghqMufdSYVU9DcfU4eQB9NYrpXVsac/edit#gid=0">
+            <i class="icon-cloud-upload"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white" href="https://github.com/addy999/cardsagainstuoft">
+            <i class="icon-social-github"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="text-muted small mb-0">Copyright &copy; Addy Bhatia 2020</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+</body>
+
 </html>

@@ -1,11 +1,7 @@
 from flask import Flask
-app = Flask(__name__)
+web_app = Flask(__name__)
 
-from app import routes
-
-@app.route("/")
-def hello():
-  return "Hello World"
+from app.services import routes
 
 if __name__ == "__main__":
-  app.run()
+  web_app.run()
